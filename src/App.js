@@ -7,7 +7,7 @@ import './App.css';
 import constants from './config/constants.json';
 
 const client = new ApolloClient({
-  uri: constants.APOLLO_CLIENT
+  uri: constants.APOLLO_CLIENT || process.env.APOLLO_CLIENT
 });
 
 class App extends Component {
